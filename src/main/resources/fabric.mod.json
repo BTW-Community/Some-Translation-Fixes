@@ -1,32 +1,26 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "stfx",
   "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Some Translation Fixes",
+  "description": "Fix some hard code translations in some languages that doesn't break vanilla translation in other languages.",
   "authors": [
-    "Me!"
+    "MikeStorm03"
   ],
-  "contact": {
-    "homepage": "https://legacyfabric.net/",
-    "sources": "https://github.com/Legacy-Fabric/fabric-example-mod"
-  },
+  "contact": {},
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/stfx/stfx.png",
   "environment": "*",
   "entrypoints": {
-    "main": [
-      "net.fabricmc.example.ExampleMod"
-    ],
     "btw:addon": [
-      "btw.community.example.ExampleAddon"
+      "com.msg.stfx.SomeTranslationFixes"
     ]
   },
   "custom": {
-    "btw:addon_prefix": "EX"
+    "btw:addon_prefix": "STFX"
   },
   "mixins": [
-    "modid.mixins.json"
+    "stfx.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.14.19",

@@ -1,12 +1,12 @@
-package btw.community.example;
+package com.msg.stfx;
 
 import btw.AddonHandler;
 import btw.BTWAddon;
 
-public class ExampleAddon extends BTWAddon {
-    private static ExampleAddon instance;
+public class SomeTranslationFixes extends BTWAddon {
+    private static SomeTranslationFixes instance;
 
-    public ExampleAddon() {
+    public SomeTranslationFixes() {
         super();
     }
 

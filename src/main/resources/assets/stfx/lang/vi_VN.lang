@@ -1,0 +1,23 @@
+potion.absorption.postfix.grenade=Thuốc hấp thụ có thể ném được
+potion.blindness.postfix.grenade=Thuốc mù quáng có thể ném được
+potion.damageBoost.postfix.grenade=Thuốc sức mạnh có thể ném được
+potion.digSlowDown.postfix.grenade=Thuốc đào chậm có thể ném được
+potion.digSpeed.postfix.grenade=Thuốc đào nhanh có thể ném được
+potion.fireResistance.postfix.grenade=Thuốc kháng lửa có thể ném được
+potion.harm.postfix.grenade=Thuốc sát thương có thể ném được
+potion.heal.postfix.grenade=Thuốc hồi máu có thể ném được
+potion.healthBoost.postfix.grenade=Thuốc tăng sinh lực có thể ném được
+potion.hunger.postfix.grenade=Thuốc ngộ độc thực phẩm có thể ném được
+potion.invisibility.postfix.grenade=Thuốc tàng hình có thể ném được
+potion.jump.postfix.grenade=Thuốc nhảy cao có thể ném được
+potion.moveSlowdown.postfix.grenade=Thuốc chậm rãi có thể ném được
+potion.moveSpeed.postfix.grenade=Thuốc tăng tốc có thể ném được
+potion.nightVision.postfix.grenade=Thuốc nhìn trong bóng tối có thể ném được
+potion.poison.postfix.grenade=Thuốc độc tố có thể ném được
+potion.waterBreathing.postfix.grenade=Thuốc thở dưới nước có thể ném được
+potion.weakness.postfix.grenade=Thuốc yếu đuối có thể ném được
+potion.regeneration.postfix.grenade=Thuốc hồi phục có thể ném được
+
+brew.prefix.mundane=Thuốc trần tục
+brew.prefix.awkward=Thuốc kì quặc
+potion.prefix.thick=Thuốc dày đặc

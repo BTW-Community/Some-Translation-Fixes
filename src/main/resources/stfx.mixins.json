@@ -1,13 +1,12 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.fabricmc.example.mixin",
+  "package": "com.msg.stfx.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "PotionKeys"
   ],
-  "client": [
-    "ExampleMixin"
-  ],
+  "client": [],
   "injectors": {
     "defaultRequire": 1
   }
