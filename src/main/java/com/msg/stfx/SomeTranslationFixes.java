@@ -1,17 +1,20 @@
 package com.msg.stfx;
 
-import btw.AddonHandler;
-import btw.BTWAddon;
 
-public class SomeTranslationFixes extends BTWAddon {
-    private static SomeTranslationFixes instance;
+import net.fabricmc.api.ModInitializer;
+import net.legacyfabric.fabric.api.logger.v1.Logger;
 
-    public SomeTranslationFixes() {
-        super();
-    }
+public class SomeTranslationFixes implements ModInitializer {
 
-    @Override
-    public void initialize() {
-        AddonHandler.logMessage(this.getName() + " Version " + this.getVersionString() + " Initializing...");
-    }
+    public static final String NAME = "Some Translation Fixes";
+    public static final Logger LOG = Logger.get(NAME);
+
+	@Override
+	public void onInitialize() {
+		LOG.info(NAME + " Initializing...");
+	}
+    // @Override
+    // public void initialize() {
+    //     AddonHandler.logMessage(this.getName() + " Version " + this.getVersionString() + " Initializing...");
+    // }
 }

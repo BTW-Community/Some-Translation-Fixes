@@ -1,29 +1,24 @@
 {
-  "schemaVersion": 1,
-  "id": "stfx",
-  "version": "${version}",
-  "name": "Some Translation Fixes",
-  "description": "Fix some hard code translations in some languages that doesn't break vanilla translation in other languages.",
-  "authors": [
-    "MikeStorm03"
-  ],
-  "contact": {},
-  "license": "CC0-1.0",
-  "icon": "assets/stfx/stfx.png",
-  "environment": "*",
-  "entrypoints": {
-    "btw:addon": [
-      "com.msg.stfx.SomeTranslationFixes"
-    ]
-  },
-  "custom": {
-    "btw:addon_prefix": "STFX"
-  },
-  "mixins": [
-    "stfx.mixins.json"
-  ],
-  "depends": {
-    "fabricloader": ">=0.14.19",
-    "minecraft": "1.6.4"
-  }
+    "schemaVersion": 1,
+    "id": "stfx",
+    "version": "${version}",
+    "name": "Some Translation Fixes",
+    "description": "Fix some hard code translations in some languages that doesn't break vanilla translation in other languages.",
+    "authors": [
+        "MikeStorm03"
+    ],
+    "icon": "assets/stfx/stfx.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "com.msg.stfx.SomeTranslationFixes"
+        ]
+    },
+    "mixins": [
+        "stfx.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.16.0",
+        "minecraft": "1.6.4"
+    }
 }

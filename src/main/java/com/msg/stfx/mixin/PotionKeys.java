@@ -1,9 +1,6 @@
 package com.msg.stfx.mixin;
 
-import net.minecraft.src.ItemPotion;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.PotionHelper;
-import net.minecraft.src.StatCollector;
+// import net.minecraft.src.PotionHelper;
 
 import java.util.List;
 
@@ -13,11 +10,16 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
-@Mixin(ItemPotion.class)
+import net.minecraft.entity.effect.StatusEffectStrings;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.PotionItem;
+import net.minecraft.util.CommonI18n;
+
+@Mixin(PotionItem.class)
 public class PotionKeys {
 
 	@Inject(
-        method = "getItemDisplayName",
+        method = "getDisplayName",
         at = @At(value = "RETURN", ordinal = 1),
         cancellable = true,
         locals = LocalCapture.CAPTURE_FAILEXCEPTION
@@ -33,7 +35,7 @@ public class PotionKeys {
         if (var2!= ""){
 
             String newKey = var4 + ".grenade";
-            String splashStr = StatCollector.translateToLocal(newKey).trim();
+            String splashStr = CommonI18n.translate(newKey).trim();
 
             if (splashStr != newKey) cir.setReturnValue(splashStr);
         }
@@ -41,7 +43,7 @@ public class PotionKeys {
 	}
 
     @Inject(
-        method = "getItemDisplayName",
+        method = "getDisplayName",
         at = @At(value = "RETURN", ordinal = 2),
         cancellable = true
     )
@@ -50,10 +52,10 @@ public class PotionKeys {
         CallbackInfoReturnable<String> cir
     ) {
 
-        String newKey = PotionHelper.func_77905_c(stack.getItemDamage()).replace("potion", "brew");
-        String potStr = StatCollector.translateToLocal(newKey).trim();
+        String newKey = StatusEffectStrings.method_3478(stack.getData()).replace("potion", "brew");
+        String potStr = CommonI18n.translate(newKey).trim();
 
-        if (potStr != newKey) cir.setReturnValue(potStr);
+        // if (potStr != newKey) cir.setReturnValue(potStr);
 
 	}
 }

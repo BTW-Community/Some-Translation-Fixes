@@ -18,6 +18,31 @@ potion.waterBreathing.postfix.grenade=Thuốc thở dưới nước có thể n�
 potion.weakness.postfix.grenade=Thuốc yếu đuối có thể ném được
 potion.regeneration.postfix.grenade=Thuốc hồi phục có thể ném được
 
+# Potion
 brew.prefix.mundane=Thuốc trần tục
 brew.prefix.awkward=Thuốc kì quặc
 potion.prefix.thick=Thuốc dày đặc
+
+potion.moveSlowdown.postfix=Thuốc chậm rãi
+potion.weakness.postfix=Thuốc yếu đuối
+potion.digSpeed.postfix=Thuốc đào nhanh
+potion.digSlowDown.postfix=Thuốc đào chậm
+potion.damageBoost.postfix=Thuốc sức mạnh
+potion.regeneration.postfix=Thuốc hồi phục
+potion.harm.postfix=Thuốc sát thương
+potion.waterBreathing.postfix=Thuốc thở dưới nước
+potion.blindness.postfix=Thuốc mù quáng
+potion.hunger.postfix=Thuốc ngộ độc thực phẩm
+
+# Effect
+potion.harm=Sát thương tức thì
+potion.heal=Hồi máu tức thì
+potion.moveSlowdown=Chậm rãi
+potion.weakness=Yếu đuối
+potion.jump=Nhảy cao
+potion.digSpeed=Đào nhanh
+potion.digSlowDown=Đào chậm
+potion.prefix.awkward=Kì quặc
+
+# In case for other custom potion
+potion.prefix.grenade=(Có thể ném được)
