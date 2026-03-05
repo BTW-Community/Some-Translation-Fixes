@@ -26,3 +26,7 @@ run/
 
 # macos
 *.DS_Store
+
+# My folder icon
+desktop.ini
+stfx.ico

@@ -1,7 +1,7 @@
 package com.msg.stfx;
 
-import btw.AddonHandler;
-import btw.BTWAddon;
+import api.AddonHandler;
+import api.BTWAddon;
 
 public class SomeTranslationFixes extends BTWAddon {
     private static SomeTranslationFixes instance;
